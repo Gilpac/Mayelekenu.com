@@ -29,9 +29,68 @@
   <!-- 
     - preload images
   -->
+
+  <title>Chat no WhatsApp</title>
+    <style>
+       
+        .whatsapp-btn img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Botão do WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 80px; /* Distância maior da base para evitar conflito com o botão "top" */
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 10; /* Garantir que o botão não seja coberto */
+    animation: pulse 2s infinite; /* Adiciona a animação */
+    transition: transform 0.2s; /* Efeito suave ao passar o mouse */
+}
+
+/* Alteração de escala ao passar o mouse */
+.whatsapp-btn:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente o botão */
+}
+
+/* Animação de pulsar */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+    </style>
 </head>
 
 <body id="top">
+
+
+  <!-- Botão do WhatsApp -->
+  <a href="https://wa.me/+244946292309?text=Olá,%20gostaria%20de%20mais%20informações%20sobre%20seus%20serviços!" 
+  target="_blank" 
+  class="whatsapp-btn">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
 
   <!-- 
     - #HEADER
@@ -265,6 +324,8 @@
               </div>
             </li>
 
+            
+
             <li>
               <div class="service-card">
 
@@ -310,7 +371,7 @@
               <div class="service-card">
 
                 <div class="card-icon">
-                  <img src="./assets/images/floor.gif" width="100" height="100" loading="lazy" alt="Train">
+                  <img src="./assets/images/floor1.gif" width="150" height="150" loading="lazy" alt="Train">
                 </div>
 
                 <h3 class="h3 card-title">
@@ -364,6 +425,26 @@
                 </p>
 
                 
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/betao.gif" width="150" height="150" loading="lazy" alt="Truck">
+                </div>
+
+                <h3 class="h3 card-title">
+                  <span class="span">07</span> Polimento do betão
+                </h3>
+
+                <p class="card-text">
+                  Transformamos superfícies de betão em acabamentos modernos, resistentes e de alta qualidade, com estética refinada e fácil manutenção.
+                </p>
+
+            
 
               </div>
             </li>
